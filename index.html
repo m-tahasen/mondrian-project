@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      background-color: rgb(222, 214, 204);
+      margin: 0;
+      padding: 0;
+    }
+    footer {
+      background-color: #010101;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      width: auto;
+      margin-top: 30px;
+      margin-bottom: -10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      font-family:Arial, Helvetica, sans-serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+    }
+    .painter {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      align-self: center;
+      margin-left: 10px;
+    }
+    .painter-img {
+      width: 250px;
+      float: left;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+    .black {
+      background-color: #232629;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      grid-area: 4 / 2 / 5 / 3 ;
+    }
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+    .no1 {
+      grid-area: 1 / 2 / 2 / 5;
+    }
+    .no2 {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    .no3 {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .no4 {
+      grid-area: 3 / 4 / 5 / 5 ;
+    }
+    .no5 {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .grid-container {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: black;
+      margin-left: 10px;
+    }
+    .flex-container {
+      display: inline-flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    @media (max-width:1030px){
+      .flex-container {
+        flex-direction: column;
+        width: 748px;
+      }
+      footer {
+        width: 748px;
+      }
+    }
+    @media (max-width:1260px) and (min-width:1030px){
+      .info {
+        clear: left;
+      }
+    }
+    @media (min-width:750px) {
+      footer {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="header"><h1>Mondrian Composition</h1></div>
+  <div class="flex-container">
+    <div class="grid-container"> 
+      <div class="white no1"></div>
+      <div class="white no2"></div>
+      <div class="white no3"></div>
+      <div class="white no4"></div>
+      <div class="white no5"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>   
+    </div>
+    <div class="painter">
+      <img class="painter-img" src="assets/images/Piet_Mondriaan.jpg" alt="photograph of Pieter Cornelis Mondriaan">
+      <p class="info">Pieter Cornelis Mondriaan, was a Dutch painter and art theoretician who is regarded as one of the greatest artists of the 20th century. He was one of the pioneers of 20th-century abstract art, as he changed his artistic direction from figurative painting to an increasingly abstract style, until he reached a point where his artistic vocabulary was reduced to simple geometric elements.</p>
+      <hr>
+      <p class="paint-info">This work you have seen is one of the works of Mr. Mondrian and was made entirely using CSS Grid.</p>
+    </div>
+  </div>  
+  <footer>© 2025 Muhammed Taha Şen</footer>
+</body>
+
+</html>
